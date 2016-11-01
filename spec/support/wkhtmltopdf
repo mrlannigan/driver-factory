@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# test script to ensure wkhtmltopdf has been called
+echo "args:$@"
+[ "x${BASH_ARGV[1]}x" = "x-x" ] && echo "stdin:$(cat /dev/stdin)"
+exit 0
